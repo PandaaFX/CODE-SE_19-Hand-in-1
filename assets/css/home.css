@@ -149,7 +149,7 @@ main #home-sec2 .home-cards-container .home-card {
   min-height: calc(35rem / 2);
   height: auto;
   background-color: var(--card-color);
-  outline: 0.2rem solid var(--card-outline-color);
+  outline: 0.15rem solid var(--card-outline-color);
   border-radius: 1.5rem;
   padding: 1rem 1.5rem;
   display: flex;
@@ -158,6 +158,8 @@ main #home-sec2 .home-cards-container .home-card {
   flex-direction: column;
   gap: 1.5rem;
   position: relative;
+
+  transition: outline 300ms ease;
 }
 
 main #home-sec2 .home-cards-container .home-card .home-card-title {
@@ -180,6 +182,10 @@ main #home-sec2 .home-cards-container .home-card .home-card-icon {
   font-size: 2rem;
   animation: moveIconBack 500ms ease-in-out forwards;
   user-select: none;
+}
+
+main #home-sec2 .home-cards-container .home-card:hover {
+  outline: 0.15rem solid var(--main-color);
 }
 
 main #home-sec2 .home-cards-container .home-card:hover .home-card-icon {
@@ -267,7 +273,7 @@ main #home-sec2 .home-cards-container .home-card:hover .home-card-icon {
   main section#home-sec1 {
     overflow: visible;
     min-height: auto;
-    padding: 10rem 1rem 3rem;
+    padding: 1.5rem 1rem 3rem;
   }
 
   main section#home-sec2 {
@@ -291,27 +297,6 @@ main #home-sec2 .home-cards-container .home-card:hover .home-card-icon {
     left: 0;
     transform: none;
     margin: 1rem auto 0;
-  }
-
-  nav {
-    position: absolute;
-    height: 5rem;
-    flex-direction: column;
-  }
-
-  nav .company-name {
-    position: relative;
-    left: 0;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
-  }
-
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
   }
 
   main #home-sec1 .hero-container .home-hero-heading {
